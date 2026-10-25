@@ -42,7 +42,7 @@ shasum -a 256 -c ReTime-1.5.0.dmg.sha256
 1.5.0 的期望值：
 
 ```
-eb62666ef86610ca38780f045d0df50c00550c42b94842c9fdea8d4245c48c3e
+2fbb974122383ee1528a20ca0448a98806c8386931ae69f9e541febcefb8bf11
 ```
 
 ## 第一次打开是空库
