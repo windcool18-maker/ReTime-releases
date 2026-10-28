@@ -86,7 +86,10 @@ shasum -a 256 -c ReTime-1.5.1.dmg.sha256
 
 ## 反馈
 
-发现 bug 或有建议，请在本仓库 [开 issue](https://github.com/windcool18-maker/ReTime-releases/issues)，写明：系统版本、ReTime 版本、复现步骤。
+发现 bug 或有建议，两种方式都行，写明：系统版本、ReTime 版本、复现步骤。
+
+- 在本仓库 [开 issue](https://github.com/windcool18-maker/ReTime-releases/issues)
+- 发邮件到 `windcool99@agent.qq.com`（不方便注册 GitHub 的话走这条）
 
 个人项目，回复可能不及时，但每一条都会看。
 
