@@ -1,0 +1,55 @@
+ReTime 专有软件许可 / Proprietary License
+
+Copyright (c) 2026 杨文里. All rights reserved.
+
+本软件（含可执行程序、图标、界面设计、文案与文档）为专有软件，著作权归作者所有。
+本许可适用于从本仓库及其 Release 页面获取的官方构建。
+
+一、允许
+
+1. 在自有设备上安装、使用本软件，用于个人的日常记录（不因使用目的为工作而受限）。
+2. 在安装包完整、未修改、且附带本许可文件的前提下，以不收费的方式原样分享给他人。
+
+二、禁止
+
+1. 反编译、反汇编、逆向工程、解密，或试图获取本软件的源代码。
+2. 修改、二次打包、改名后再分发，或以本软件为基础开发衍生产品。
+3. 出租、出售、或以任何方式以本软件直接牟利；将其整体或部分并入其他商业产品分发。
+4. 移除或篡改本软件中的著作权、署名、许可声明与版本信息。
+
+三、「ReTime」名称与图标
+
+「ReTime」名称、App 图标为作者保留的标识。未经书面许可，不得用于任何衍生产品、
+服务、域名、应用商店条目或宣传材料。本许可不授予任何商标权。
+
+四、无担保
+
+本软件按「现状」提供，不附带任何明示或默示的担保，包括但不限于适销性、
+特定用途适用性与不侵权担保。因使用或无法使用本软件造成的任何直接或间接损失，
+作者不承担责任。重要数据请自行备份。
+
+五、终止
+
+违反本许可任一条款，授权自动终止，须立即停止使用并删除全部副本。
+
+六、联系
+
+商业授权、批量分发、预装合作：windcool99@agent.qq.com
+
+---
+
+ReTime is proprietary software. Copyright (c) 2026 Yang Wenli (杨文里). All rights reserved.
+
+Permission is granted to install and use this software on your own devices, and to share
+the unmodified installer free of charge with this license attached.
+
+You may NOT decompile, disassemble, reverse engineer, modify, repackage, redistribute for
+profit, or create derivative works. You may NOT remove copyright, attribution, or license
+notices. The name "ReTime" and its icon remain the property of the author; no trademark
+rights are granted.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
+IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING
+FROM THE USE OF THE SOFTWARE.
+
+This license terminates automatically upon any breach.
