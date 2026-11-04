@@ -1,5 +1,9 @@
 # ReTime
 
+<p align="center">
+  <img src="assets/retime-poster.png" width="330" alt="ReTime 介绍海报：你的时间，记在你自己电脑上">
+</p>
+
 **你的时间，记在你自己电脑上。**
 
 macOS 本地优先的个人时间记录应用：事项、日程、备忘录、日记、记账、生理期、倒数日，一个地方记全。
