@@ -23,15 +23,15 @@ macOS 本地优先的个人时间记录应用：事项、日程、备忘录、�
 |---|---|
 | 系统 | **macOS 14（Sonoma）或更高** |
 | 芯片 | **Apple Silicon M1 及以后全系**（M1 / M1 Pro·Max·Ultra / M2 全系 / M3 / M4 / M5），Mac 笔记本与台式机均可 |
-| 体积 | DMG `4.9 MB` / 安装后 `18 MB` |
+| 体积 | DMG `5.0 MB` / 安装后 `18 MB` |
 
-> **版本沿革**：1.6.1（2026-11-05）首发时曾把最低系统误设成 macOS 27，导致 macOS 14–26 全部装不上（M1 / M2 早期机型最高只能升到 26），当日已把编译目标降为 14.0 并两次同名重打包。**1.6.2（2026-11-05）**把品牌文案升级为主标「你的时光 你掌握」+ 副标「有些记录，只该有一个读者」，**功能与数据结构未变**。手上若是 1.6.1 或更早的包，直接下载 1.6.2 覆盖安装即可，数据在用户目录不受影响。
+> **版本沿革**：1.6.1（2026-11-05）首发时曾把最低系统误设成 macOS 27，导致 macOS 14–26 全部装不上（M1 / M2 早期机型最高只能升到 26），当日已把编译目标降为 14.0 并两次同名重打包。**1.6.2（2026-11-05）**把品牌文案升级为主标「你的时光 你掌握」+ 副标「有些记录，只该有一个读者」，**功能与数据结构未变**。手上若是 1.6.1 或更早的包，直接下载 1.6.2 覆盖安装即可，数据在用户目录不受影响。 **2026-11-05 晚间补记**：因品牌标识统一，1.6.2 DMG 已**同名重打包** （新 SHA-256 见下方），此前下载过的请重新下载；1.6.0 / 1.6.1 / 1.5.2 三个历史包已下架。
 >
 > **关于系统要求**：14.0 是硬下限 —— 数据层用的 SwiftData 从 macOS 14 才引入。本构建用 macOS 27 SDK 编译，但 SDK 只决定「能用哪些 API」，编译 `-target` 才决定「能装在哪代系统」，两者不必相同。产物的 `LC_BUILD_VERSION minos` 与 Info.plist 的 `LSMinimumSystemVersion` 现均为 **14.0**，页面与产物一致。当前是 arm64 通用二进制，**不含 Intel 版本**。
 
 ## 安装（三步，第二步和网上教程不一样，请照这个做）
 
-1. 下载 `ReTime-1.6.1.dmg`，双击打开，把 **ReTime** 拖进左边的「应用程序」
+1. 下载 `ReTime-1.6.2.dmg`，双击打开，把 **ReTime** 拖进左边的「应用程序」
 2. **在「应用程序」里双击 ReTime** → 会弹一个「无法打开」的框，点「完成」关掉
 3. 打开 **系统设置 → 隐私与安全性**，向下滚动到底部，会看到「已阻止"ReTime"以保护Mac。」→ 点旁边的 **「仍要打开」** → 输入密码或触控 ID。系统放行后会直接把它打开
 
@@ -54,13 +54,13 @@ macOS 本地优先的个人时间记录应用：事项、日程、备忘录、�
 ## 校验下载完整性
 
 ```bash
-shasum -a 256 -c ReTime-1.6.1.dmg.sha256
+shasum -a 256 -c ReTime-1.6.2.dmg.sha256
 ```
 
-1.6.1 的期望值：
+1.6.2 的期望值：
 
 ```
-85e2cbdf7c973eee674e23941e7aa6ba9e99178f14cc72389b01a02a307633b7
+6db16e58ca162a77d67ee1b454d0153ddf113c64a5e65e0d92f78788f36aac91
 ```
 
 ## 第一次打开是空库
@@ -128,5 +128,7 @@ shasum -a 256 -c ReTime-1.6.1.dmg.sha256
 *ReTime is a closed-source, local-first personal time tracker for macOS. No account, no telemetry, works fully offline. Requires macOS 14 Sonoma or later on Apple Silicon (M1 or later; Mac laptops and desktops; no Intel build). Interface is Simplified Chinese only for now.*
 
 *⚠️ The 1.6.1 DMG was re-uploaded twice on 2026-11-05 (first to fix the minimum OS requirement 27 → 14, then to align the in-app Help text with the actual UI) — same filename, new SHA-256 each time. If you downloaded it earlier that day, please download again and verify.*
+
+*⚠️ The 1.6.2 DMG was rebuilt on 2026-11-05 to unify the app identifier (`com.retime.app`). Same filename, new SHA-256 shown above. If you downloaded it before, please download again and verify. Older 1.6.0 / 1.6.1 / 1.5.2 builds have been retired.*
 
 *Data lives in one folder (`~/Library/Application Support/default.store` plus `-wal` / `-shm`) — three files in total, and only together are they complete; copying just the main store drops whatever is still in the write-ahead log. There is no automatic two-way sync, restore replaces the whole database, and a manual additive-only merge is available. Closed source, 90-day full trial; after that every feature keeps working and a once-a-day purchase reminder appears. Full licence is ¥68 including 365 days of updates, activated offline with a licence key.*
