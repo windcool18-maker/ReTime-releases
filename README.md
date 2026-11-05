@@ -23,7 +23,7 @@ macOS 本地优先的个人时间记录应用：事项、日程、备忘录、�
 | 芯片 | **Apple Silicon M1 及以后全系**（M1 / M1 Pro·Max·Ultra / M2 全系 / M3 / M4 / M5），Mac 笔记本与台式机均可 |
 | 体积 | DMG `4.9 MB` / 安装后 `18 MB` |
 
-> ⚠️ **2026-11-05 重要订正：已下载过的用户请重新下载。** 1.6.1 首发包把最低系统误设成了 macOS 27，导致 macOS 14–26 全部装不上（M1 / M2 早期机型最高只能升到 26，等于永远装不上）。当日已把编译目标降为 14.0，并**重新打包上传了同名文件** `ReTime-1.6.1.dmg`，**SHA-256 已变更**（见下方）。版本号仍是 1.6.1；如果你在 11-05 早些时候下载过旧包，请删掉重新下载。
+> ⚠️ **2026-11-05 重要订正：已下载过的用户请重新下载（当日共两次同名重打包）。** ① 首发包把最低系统误设成 macOS 27，导致 macOS 14–26 全部装不上（M1 / M2 早期机型最高只能升到 26），当日已把编译目标降为 14.0 后重新上传同名文件；② 10:3x 又修正了 App 内「使用说明」与真实界面不一致的文案（按钮名、备份说明、试用与激活条目），**再次重打包同名文件**。两次都使 `ReTime-1.6.1.dmg` 的 **SHA-256 变更**（当前值见下方）。版本号仍是 1.6.1；如果你在 11-05 当天早些时候下载过任一旧包，请删掉重新下载并核对校验值。
 >
 > **关于系统要求**：14.0 是硬下限 —— 数据层用的 SwiftData 从 macOS 14 才引入。本构建用 macOS 27 SDK 编译，但 SDK 只决定「能用哪些 API」，编译 `-target` 才决定「能装在哪代系统」，两者不必相同。产物的 `LC_BUILD_VERSION minos` 与 Info.plist 的 `LSMinimumSystemVersion` 现均为 **14.0**，页面与产物一致。当前是 arm64 通用二进制，**不含 Intel 版本**。
 
@@ -58,7 +58,7 @@ shasum -a 256 -c ReTime-1.6.1.dmg.sha256
 1.6.1 的期望值：
 
 ```
-b17c2c56557be48f10c6dadb2fc4e2e9884fa3bab3b46d1a504340deb2445b98
+85e2cbdf7c973eee674e23941e7aa6ba9e99178f14cc72389b01a02a307633b7
 ```
 
 ## 第一次打开是空库
@@ -125,6 +125,6 @@ b17c2c56557be48f10c6dadb2fc4e2e9884fa3bab3b46d1a504340deb2445b98
 
 *ReTime is a closed-source, local-first personal time tracker for macOS. No account, no telemetry, works fully offline. Requires macOS 14 Sonoma or later on Apple Silicon (M1 or later; Mac laptops and desktops; no Intel build). Interface is Simplified Chinese only for now.*
 
-*⚠️ The 1.6.1 DMG was re-uploaded on 2026-11-05 to fix an overly high minimum OS requirement (27 → 14) — same filename, new SHA-256. If you downloaded it earlier that day, please download again and verify.*
+*⚠️ The 1.6.1 DMG was re-uploaded twice on 2026-11-05 (first to fix the minimum OS requirement 27 → 14, then to align the in-app Help text with the actual UI) — same filename, new SHA-256 each time. If you downloaded it earlier that day, please download again and verify.*
 
 *Data lives in one folder (`~/Library/Application Support/default.store` plus `-wal` / `-shm`); there is no automatic two-way sync, restore replaces the whole database, and a manual additive-only merge is available. Closed source, 90-day full trial; after that every feature keeps working and a once-a-day purchase reminder appears. Full licence is ¥68 including 365 days of updates, activated offline with a licence key.*
