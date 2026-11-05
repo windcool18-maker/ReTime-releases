@@ -19,11 +19,13 @@ macOS 本地优先的个人时间记录应用：事项、日程、备忘录、�
 
 | | |
 |---|---|
-| 系统 | macOS 27 或更高 |
-| 芯片 | Apple Silicon（arm64） |
-| 体积 | DMG `5.0 MB` / 安装后 `18 MB` |
+| 系统 | **macOS 14（Sonoma）或更高** |
+| 芯片 | **Apple Silicon M1 及以后全系**（M1 / M1 Pro·Max·Ultra / M2 全系 / M3 / M4 / M5），Mac 笔记本与台式机均可 |
+| 体积 | DMG `4.9 MB` / 安装后 `18 MB` |
 
-> **关于系统要求**：本构建按 macOS 27 SDK 编译，产物的 `LC_BUILD_VERSION minos` 与 Info.plist 的 `LSMinimumSystemVersion` 均为 27.0，低于 27 的系统会被 dyld 拒绝加载。1.6.0 及更早版本的页面曾写「macOS 13+」，属声明与产物不符；1.6.1 已把构建脚本、Info.plist 与页面文案三者统一。
+> ⚠️ **2026-11-05 重要订正：已下载过的用户请重新下载。** 1.6.1 首发包把最低系统误设成了 macOS 27，导致 macOS 14–26 全部装不上（M1 / M2 早期机型最高只能升到 26，等于永远装不上）。当日已把编译目标降为 14.0，并**重新打包上传了同名文件** `ReTime-1.6.1.dmg`，**SHA-256 已变更**（见下方）。版本号仍是 1.6.1；如果你在 11-05 早些时候下载过旧包，请删掉重新下载。
+>
+> **关于系统要求**：14.0 是硬下限 —— 数据层用的 SwiftData 从 macOS 14 才引入。本构建用 macOS 27 SDK 编译，但 SDK 只决定「能用哪些 API」，编译 `-target` 才决定「能装在哪代系统」，两者不必相同。产物的 `LC_BUILD_VERSION minos` 与 Info.plist 的 `LSMinimumSystemVersion` 现均为 **14.0**，页面与产物一致。当前是 arm64 通用二进制，**不含 Intel 版本**。
 
 ## 安装（三步，第二步和网上教程不一样，请照这个做）
 
@@ -33,8 +35,7 @@ macOS 本地优先的个人时间记录应用：事项、日程、备忘录、�
 
 之后就可以正常双击了，不用再走一遍。
 
-> ⚠️ **网上到处教的「右键 → 打开」在 macOS 15 及以后已经失效**（Apple 删除了这条绕过路径），
-> 照旧教程做只会一直卡住。按上面三步走在任何版本都有效。
+> ⚠️ **「右键 → 打开」只在 macOS 14 上还有效**；Apple 在 macOS 15 及以后删掉了这条绕过路径，照旧教程做只会一直卡住。上面三步法在 14 / 15 / 26 / 27 上都一样能用，所以统一按三步写。
 
 > **为什么首启会被拦一次**
 > 因为当前版本没有做 Apple 公证 —— 公证需要每年 99 美元的开发者账号，这个项目还没到那一步。
@@ -57,7 +58,7 @@ shasum -a 256 -c ReTime-1.6.1.dmg.sha256
 1.6.1 的期望值：
 
 ```
-0730f2fe5d1ea00f195d84aec310324c3f18b5f8cbe244e723aff1f964b9864d
+b17c2c56557be48f10c6dadb2fc4e2e9884fa3bab3b46d1a504340deb2445b98
 ```
 
 ## 第一次打开是空库
@@ -122,6 +123,8 @@ shasum -a 256 -c ReTime-1.6.1.dmg.sha256
 
 ---
 
-*ReTime is a closed-source, local-first personal time tracker for macOS. No account, no telemetry, works fully offline. Requires macOS 27 or later on Apple Silicon. Interface is Simplified Chinese only for now.*
+*ReTime is a closed-source, local-first personal time tracker for macOS. No account, no telemetry, works fully offline. Requires macOS 14 Sonoma or later on Apple Silicon (M1 or later; Mac laptops and desktops; no Intel build). Interface is Simplified Chinese only for now.*
+
+*⚠️ The 1.6.1 DMG was re-uploaded on 2026-11-05 to fix an overly high minimum OS requirement (27 → 14) — same filename, new SHA-256. If you downloaded it earlier that day, please download again and verify.*
 
 *Data lives in one folder (`~/Library/Application Support/default.store` plus `-wal` / `-shm`); there is no automatic two-way sync, restore replaces the whole database, and a manual additive-only merge is available. Closed source, 90-day full trial; after that every feature keeps working and a once-a-day purchase reminder appears. Full licence is ¥68 including 365 days of updates, activated offline with a licence key.*
