@@ -91,7 +91,7 @@ shasum -a 256 -c ReTime-1.6.1.dmg.sha256
 
 **2. 没有任何遥测。** 没有统计 SDK、没有崩溃上报、没有埋点、没有账号系统。可以用 Little Snitch 之类的工具盯着它。
 
-**3. 数据就是一个文件夹。** `~/Library/Application Support/default.store`（连同 `-wal` / `-shm`）。退出 ReTime 后整个复制走就能带走，删掉就是清空，不藏在沙盒深处，不需要登录才能导出；也可以在「设置 → 备份 → 备份恢复 → 导出备份包…」拿到一个自洽、带校验的备份包文件夹。
+**3. 数据就是一个文件夹。** `~/Library/Application Support/default.store`（连同 `-wal` / `-shm`）。这个文件夹里是 **3 个文件**：`default.store`、`default.store-wal`、`default.store-shm`，三者合起来才是完整数据；只拷主库会丢掉还留在 `-wal` 里的最近记录——它常常比主库本身还大。退出 ReTime 后整个文件夹复制走就能带走，删掉就是清空，不藏在沙盒深处，不需要登录才能导出；也可以在「设置 → 备份 → 备份恢复 → 导出备份包…」拿到一个自洽、带校验的备份包文件夹。
 
 > 关于「加密」，说准确一点：**数据库是明文 SQLite** —— 这样你才能用任何工具打开自己的数据。模块密码锁做的是**界面门禁**（密码经 PBKDF2-HMAC-SHA256 / 12 万轮哈希后存本机），不是磁盘加密。需要防盗请开启 macOS 自带的 FileVault。
 
@@ -129,4 +129,4 @@ shasum -a 256 -c ReTime-1.6.1.dmg.sha256
 
 *⚠️ The 1.6.1 DMG was re-uploaded twice on 2026-11-05 (first to fix the minimum OS requirement 27 → 14, then to align the in-app Help text with the actual UI) — same filename, new SHA-256 each time. If you downloaded it earlier that day, please download again and verify.*
 
-*Data lives in one folder (`~/Library/Application Support/default.store` plus `-wal` / `-shm`); there is no automatic two-way sync, restore replaces the whole database, and a manual additive-only merge is available. Closed source, 90-day full trial; after that every feature keeps working and a once-a-day purchase reminder appears. Full licence is ¥68 including 365 days of updates, activated offline with a licence key.*
+*Data lives in one folder (`~/Library/Application Support/default.store` plus `-wal` / `-shm`) — three files in total, and only together are they complete; copying just the main store drops whatever is still in the write-ahead log. There is no automatic two-way sync, restore replaces the whole database, and a manual additive-only merge is available. Closed source, 90-day full trial; after that every feature keeps working and a once-a-day purchase reminder appears. Full licence is ¥68 including 365 days of updates, activated offline with a licence key.*
