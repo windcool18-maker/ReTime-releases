@@ -22,7 +22,7 @@ macOS 本地优先的个人时间记录应用：事项、日程、备忘录、�
 </p>
 
 <p align="center">
-  <sub>▲ 宣传短片《把时间留住》· 15 秒循环（此处无声）· <a href="https://raw.githubusercontent.com/windcool18-maker/ReTime-releases/main/assets/ReTime-freeze-time-v6-final.mp4">下载原片 mp4（4.5 MB，带声音）</a></sub>
+  <sub>▲ 宣传短片《把时间留住》· 15 秒循环（此处无声）· <a href="https://raw.githubusercontent.com/windcool18-maker/ReTime-releases/main/assets/ReTime-freeze-time-v6-final.mp4">下载原片 mp4（4.2 MB，带声音）</a></sub>
 </p>
 
 ---
