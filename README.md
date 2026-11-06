@@ -1,7 +1,7 @@
 # ReTime
 
 <p align="center">
-  <img src="assets/ReTime-正式版B-无水印.png" width="330" alt="ReTime 介绍海报：你的时光 你掌握">
+  <img src="assets/ReTime-横版海报.png" width="860" alt="ReTime 横版海报：日程时间轴界面，一件事占多长时间一眼看得见">
 </p>
 
 **你的时光 你掌握**
@@ -23,14 +23,6 @@ macOS 本地优先的个人时间记录应用：事项、日程、备忘录、�
 
 <p align="center">
   <sub>▲ 宣传短片《把时间留住》· 15 秒循环（此处无声）· <a href="https://raw.githubusercontent.com/windcool18-maker/ReTime-releases/main/assets/ReTime-freeze-time-v6-final.mp4">下载原片 mp4（4.5 MB，带声音）</a></sub>
-</p>
-
-<p align="center">
-  <img src="assets/ReTime-正式版A-无水印.png" width="330" alt="ReTime 海报：日程时间轴，本地优先 / 无账号 / 无遥测 / 断网可用">
-</p>
-
-<p align="center">
-  <sub>▲ 时间轴界面：一件事占多长时间，一眼看得见</sub>
 </p>
 
 ---
