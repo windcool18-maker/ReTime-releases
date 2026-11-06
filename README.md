@@ -16,13 +16,13 @@ macOS 本地优先的个人时间记录应用：事项、日程、备忘录、�
 ## 看看它长什么样
 
 <p align="center">
-  <a href="assets/ReTime-freeze-time-v6-final.mp4" title="播放 ReTime 宣传短片">
-    <img src="assets/ReTime-宣传短片-封面.jpg" width="660" alt="ReTime 宣传短片《把时间留住》封面，15 秒">
+  <a href="https://raw.githubusercontent.com/windcool18-maker/ReTime-releases/main/assets/ReTime-freeze-time-v6-final.mp4" title="下载原片（带声音）">
+    <img src="assets/ReTime-宣传短片.webp" width="660" alt="ReTime 宣传短片《把时间留住》，15 秒">
   </a>
 </p>
 
 <p align="center">
-  <sub>▲ 点击封面播放宣传短片（15 秒，mp4）</sub>
+  <sub>▲ 宣传短片《把时间留住》· 15 秒循环（此处无声）· <a href="https://raw.githubusercontent.com/windcool18-maker/ReTime-releases/main/assets/ReTime-freeze-time-v6-final.mp4">下载原片 mp4（4.5 MB，带声音）</a></sub>
 </p>
 
 <p align="center">
