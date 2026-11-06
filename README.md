@@ -9,7 +9,7 @@ macOS 本地优先的个人时间记录应用：事项、日程、备忘录、�
 
 ---
 
-## 看看它长什么样
+## 把时间留住
 
 <p align="center">
   <a href="https://raw.githubusercontent.com/windcool18-maker/ReTime-releases/main/assets/ReTime-freeze-time-v6-final.mp4" title="下载原片（带声音）">
