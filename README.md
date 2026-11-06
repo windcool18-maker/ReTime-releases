@@ -1,7 +1,7 @@
 # ReTime
 
 <p align="center">
-  <img src="assets/retime-poster.png" width="330" alt="ReTime 介绍海报：你的时光 你掌握">
+  <img src="assets/ReTime-正式版B-无水印.png" width="330" alt="ReTime 介绍海报：你的时光 你掌握">
 </p>
 
 **你的时光 你掌握**
@@ -10,6 +10,28 @@
 
 macOS 本地优先的个人时间记录应用：事项、日程、备忘录、日记、记账、生理期、倒数日，一个地方记全。
 数据全部存在你自己的 Mac 上，**无账号、无遥测、不联网也能用完整功能**。
+
+---
+
+## 看看它长什么样
+
+<p align="center">
+  <a href="assets/ReTime-freeze-time-v6-final.mp4" title="播放 ReTime 宣传短片">
+    <img src="assets/ReTime-宣传短片-封面.jpg" width="660" alt="ReTime 宣传短片《把时间留住》封面，15 秒">
+  </a>
+</p>
+
+<p align="center">
+  <sub>▲ 点击封面播放宣传短片（15 秒，mp4）</sub>
+</p>
+
+<p align="center">
+  <img src="assets/ReTime-正式版A-无水印.png" width="330" alt="ReTime 海报：日程时间轴，本地优先 / 无账号 / 无遥测 / 断网可用">
+</p>
+
+<p align="center">
+  <sub>▲ 时间轴界面：一件事占多长时间，一眼看得见</sub>
+</p>
 
 ---
 
