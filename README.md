@@ -1,7 +1,7 @@
 # ReTime
 
 <p align="center">
-  <img src="assets/ReTime-横版海报.png" width="860" alt="ReTime 横版海报：日程时间轴界面，一件事占多长时间一眼看得见">
+  <img src="assets/ReTime-横版海报.png" width="860" alt="ReTime 横版海报：你的时光 你掌握 —— 日程时间轴界面，本地优先 / 无账号 / 无遥测 / 断网可用">
 </p>
 
 **你的时光 你掌握**
