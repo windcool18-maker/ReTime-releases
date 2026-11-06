@@ -1,7 +1,7 @@
 # ReTime 技术支持 / Support
 
 适用产品：ReTime for iPhone / iPad（App Store 版）
-开发者：ReTime（独立开发者）
+开发者：windcool99（独立开发者）
 系统要求：iOS 17.0 / iPadOS 17.0 或更高
 当前版本：1.6.2
 

@@ -2,7 +2,7 @@
 
 生效日期 / Effective date：2026-11-05
 适用产品：ReTime for iPhone / iPad（App Store 版，版本 1.6.2）
-开发者：ReTime（独立开发者）
+开发者：windcool99（独立开发者）
 
 ---
 
